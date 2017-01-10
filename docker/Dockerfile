@@ -8,7 +8,8 @@ COPY /FitNesseRoot /fitnesse/FitNesseRoot
 WORKDIR /fitnesse
 #CMD java -jar /fitnesse/fitnesse-standalone.jar -p 8090 -o -a password.txt
 #CMD java -classpath /fitnesse/fitnesse.jar -jar /fitnesse/fitnesse-standalone.jar -p 8090
-CMD java -classpath /fitnesse/fitnesse.jar  fitnesseMain.FitNesseMain -p 8090
+
+CMD java -classpath /fitnesse/fitnesse.jar  -DsystemUnderTestUrl="http://therest:8080/therest/" fitnesseMain.FitNesseMain -p 8090
 
 
 #java -jar fitnesse-standalone.jar -p 8090 -o -a password.txt
