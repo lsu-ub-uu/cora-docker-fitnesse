@@ -25,9 +25,6 @@
 
 	<properties>
 		<fitnesse.version>0.1-SNAPSHOT</fitnesse.version>
-<!-- 		<systemone.version>0.11-SNAPSHOT</systemone.version> -->
-<!-- 		<therest.version>0.13-SNAPSHOT</therest.version> -->
-<!-- 		<basicstorage.version>0.3-SNAPSHOT</basicstorage.version> -->
 	</properties>
 
 	<scm>
@@ -69,25 +66,6 @@
 			<version>${fitnesse.version}</version>
 			<scope>compile</scope>
 		</dependency>
-<!-- 		<dependency> -->
-<!-- 			<groupId>se.uu.ub.cora</groupId> -->
-<!-- 			<artifactId>systemone</artifactId> -->
-<!-- 			<version>${systemone.version}</version> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>se.uu.ub.cora</groupId> -->
-<!-- 			<artifactId>therest</artifactId> -->
-<!-- 			<version>${therest.version}</version> -->
-<!-- 			<type>war</type> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
-<!-- 		<dependency> -->
-<!-- 			<groupId>se.uu.ub.cora</groupId> -->
-<!-- 			<artifactId>basicstorage</artifactId> -->
-<!-- 			<version>${basicstorage.version}</version> -->
-<!-- 			<scope>compile</scope> -->
-<!-- 		</dependency> -->
 	</dependencies>
 
 	<build>
@@ -128,16 +106,9 @@
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>${project.build.directory}/docker</outputDirectory>
-<!-- 									<includes>FitNessRoot/properties</includes> -->
-<!-- 									<includes>FitNesseRoot/properties</includes> -->
 									<includes>FitNesseRoot/**</includes>
-<!-- 									<includes>**/properties</includes> -->
-<!-- 									<includes>**/*.json</includes> -->
 								</artifactItem>
 							</artifactItems>
-<!-- 							<includes>**/*.java</includes> -->
-<!-- 							<excludes>**/*.properties</excludes> -->
-<!-- 							<outputDirectory>${project.build.directory}/wars</outputDirectory> -->
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
 						</configuration>
