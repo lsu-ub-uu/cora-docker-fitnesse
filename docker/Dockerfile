@@ -6,7 +6,7 @@ COPY /plugins.properties /fitnesse/
 
 WORKDIR /fitnesse
 
-CMD java -classpath /fitnesse/fitnesse.jar  -DsystemUnderTestUrl="http://therest:8080/therest/" fitnesseMain.FitNesseMain -p 8090
+CMD java -classpath /fitnesse/fitnesse.jar  -DsystemUnderTestUrl="http://therest:8080/therest/" -DappTokenVerifierUrl="http://apptokenverifier:8080/apptokenverifier/" fitnesseMain.FitNesseMain -p 8090
 
 #java -jar fitnesse-standalone.jar -p 8090 -o -a password.txt
 
