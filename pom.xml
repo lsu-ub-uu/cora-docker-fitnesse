@@ -20,11 +20,11 @@
 
 	<artifactId>cora-docker-fitnesse</artifactId>
 	<packaging>pom</packaging>
-	<version>0.2-SNAPSHOT</version>
+	<version>0.3-SNAPSHOT</version>
 	<name>The Fitnesse docker</name>
 
 	<properties>
-		<fitnesse.version>0.2-SNAPSHOT</fitnesse.version>
+		<fitnesse.version>0.3-SNAPSHOT</fitnesse.version>
 	</properties>
 
 	<scm>
