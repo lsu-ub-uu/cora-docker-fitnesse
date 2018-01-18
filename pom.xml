@@ -24,7 +24,7 @@
 	<name>The Fitnesse docker</name>
 
 	<properties>
-		<fitnesse.version>0.3-SNAPSHOT</fitnesse.version>
+		<corafitnesse.version>0.4-SNAPSHOT</corafitnesse.version>
 	</properties>
 
 	<scm>
@@ -52,7 +52,7 @@
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
 			<artifactId>fitnesse</artifactId>
-			<version>${fitnesse.version}</version>
+			<version>${corafitnesse.version}</version>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
@@ -91,7 +91,7 @@
 								<artifactItem>
 									<groupId>se.uu.ub.cora</groupId>
 									<artifactId>fitnesse</artifactId>
-									<version>${fitnesse.version}</version>
+									<version>${corafitnesse.version}</version>
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>${project.build.directory}/docker</outputDirectory>
